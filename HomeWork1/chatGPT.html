@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IskaChat</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .bar {
+            height: 60px;
+            background-color: rgba(10, 9, 9, 0.772);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .name {
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .newChat {
+            font-size: 18px;
+            color: white;
+            background: #28a745;
+            padding: 8px 16px;
+            border-radius: 15px;
+            border: 2px solid #1e7e34;
+        }
+        
+        .main {
+            flex: 1;
+            display: flex;  
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            
+        }
+        
+        .chat-container {
+            border: 2px solid #28a745;
+            border-radius: 15px;
+            padding: 40px;
+            background: #f8fff9;
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        
+        .hello {
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+            margin: 0;
+        }
+        
+        .search-container {
+            width: 100%;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        
+        .search-input {
+            flex: 1;
+            height: 50px;
+            border: 2px solid #28a745;
+            border-radius: 25px;
+            padding: 0 20px;
+            font-size: 16px;
+            outline: none;
+        }
+        
+        .search-input::placeholder {
+            color: #999;
+        }
+        
+        .search-input:focus {
+            border-color: #1e7e34;
+        }
+        
+        .send-button {
+            height: 50px;
+            background: #28a745;
+            color: white;
+            border: 2px solid #1e7e34;
+            border-radius: 25px;
+            font-size: 16px;
+            padding: 0 30px;
+            cursor: not-allowed;
+            opacity: 0.7;
+        }
+        
+        .send-button {
+            pointer-events: none;
+        }
+        
+        .bar, .hello {
+            pointer-events: none;
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bar">
+        <span class="name">IlyaLoveHotMums</span>
+        <span class="newChat">+ Новый чат</span>
+    </div>
+    
+    <div class="main">
+        <div class="chat-container">
+            <div class="hello">Привет, начни разговор!</div>
+            
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Введите ваше сообщение...">
+                <button class="send-button">Отправить</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
