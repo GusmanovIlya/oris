@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+    <style>
+        .horizontal-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .horizontal-list li {
+            display: inline-block;
+            margin-right: 20px;
+            background: #f0f0f0;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .temp {
+            position: absolute;
+            top: 35px;
+            right: 35px;
+            width: 200px;
+            height: 70px;
+        }
+        
+        .temp-list {
+            list-style: none;
+            padding: 0;
+            text-align: right;
+        }
+        
+        .temp-list li:first-child {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .temp-list li:last-child {
+            font-size: 20px;
+            color: #6E6CDF;
+            font-weight: bold;
+        }
+        
+        .main1 {
+            position: absolute;
+            top: 360px;
+            left: 6px;
+            width: 1715px;
+            height: 397px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .mainClass {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .mainClass h1 {
+            font-size: 74px;
+            font-weight: bold;
+        }
+        
+        .inputsearch {
+            width: 621px;
+            height: 65px;
+            border-radius: 18px;
+            background-color: #FAFAFA;
+            border: 2px solid #EEEEEE;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        
+        .inputsearch input {
+            outline: none;
+            border: 0px;
+            background-color: #FAFAFA;
+            font-size: 25px;
+            margin-left: 10px;
+            width: 90%;
+        }
+        
+        body {
+            width: 1728px;
+            height: 1117px;
+            border: 1px solid black;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="temp">
+        <ul class="temp-list">
+            <li>36°</li>
+            <li>Ahmedabad</li>
+        </ul>
+    </div>
+
+    <div class="main1">
+        <div class="mainClass">
+            <h1>09:11:01</h1>
+            <span style="font-size: 36px; color: #6E6CDF;">Good Morning, Saad.</span>
+        </div>
+
+        <div class="inputsearch">
+            <img src="./loop.png" alt="" style="margin-left: 10px;">
+            <input type="search" name="" id="" placeholder="Search...">
+        </div>
+
+        <div class="horizontal-list">
+            <li><img src="./1icon.png" alt=""></li>
+            <li><img src="./2icon.png" alt=""></li>
+            <li><img src="./3icon.png" alt=""></li>
+            <li><img src="./4icon.png" alt=""></li>
+            <li><img src="./5icon.png" alt=""></li>
+            <li><img src="./6icon.png" alt=""></li>
+            <li><span style="color: #BDBDBD; font-size: 15px;">+</span></li>
+        </div>
+    </div>
+</body>
+</html>

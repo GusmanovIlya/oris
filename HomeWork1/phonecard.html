@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneCard</title>
+    <style>
+        .icons{
+            width: 30px;
+            height: 30px;
+        }
+
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 24px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .element{
+            height: 48px;
+            width: 48px;
+            background-color: #FAFAFA;
+            border: 1px solid #EEEEEE;
+            border-radius: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sites{
+            height: 48px;
+        }
+
+        input{
+            border: 0px;
+            background-color: #FAFAFA;
+            font-size: 100%;
+            outline: none;
+        }
+
+        .searchline{
+            background-color: #FAFAFA;
+            border: 1px solid #EEEEEE;
+            border-radius: 16px;
+            height: 57px;
+            padding-left: 24px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 10px;
+            width: 345px;
+        }
+
+        .text1{
+            font-family: Arial, sans-serif;
+            color: black;
+            font-weight: bold;
+        }
+
+        .text2{
+            font-family: Arial, sans-serif;
+            color: #6E6CDF;
+            font-weight: bold;
+        }
+
+        .temperature{
+            height: 48px;
+            text-align: right;
+            padding-right: 24px;
+        }
+
+        .info{
+            height: 104px;
+            text-align: center;
+            gap: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .search{
+            height: 129px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .mainview{
+            width: calc(100% - 48px);
+            height: 80%;
+            margin: 20px 24px 0px 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        *{
+            margin: 0; 
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 393px;
+            height: 852px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainview">
+        <div class="temperature">
+            <span class="text1" style="font-size: 22px;">36°</span>
+            <span class="text2" style="font-size: 14px;"><br>Ahmedabad</span>
+        </div>
+        
+        <div class="info">
+            <span class="text1" style="font-size: 48px;">09:11:01</span>
+            <span class="text2" style="font-size: 24px;"><br>Good Morning, Saad.</span>
+        </div>
+        
+        <div class="search">
+            <div class="searchline">
+                <img src="./loop.png" alt="" style="height: 40%;">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="sites">
+                <ul>
+                    <li class="element">
+                        <img class="icons" src="./1icon.png" alt="">
+                    </li>
+                    <li class="element">
+                        <img class="icons" src="./2icon.png" alt="">
+                    </li>
+                    <li class="element">
+                        <img class="icons" src="./3icon.png" alt="">
+                    </li>
+                    <li class="element">
+                        <img class="icons" src="./4icon.png" alt="">
+                    <li class="element">
+                        <img class="icons" src="./5icon.png" alt="">
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
