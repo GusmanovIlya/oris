@@ -1,0 +1,8 @@
+{
+  "prefixes": [
+    "http://127.0.0.1:8888/connection/",
+    "http://localhost:8888/connection/"
+  ],
+  "staticFilesPath": "static",
+  "defaultFile": "Hello.html"
+}
