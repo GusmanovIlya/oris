@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Консольное приложение -->
+    <OutputType>Exe</OutputType>
+
+    <!-- .NET 10 -->
+    <TargetFramework>net10.0</TargetFramework>
+
+    <!-- Автоматические using для стандартных неймспейсов -->
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <!-- Включаем Nullable, чтобы ловить ошибки с null -->
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <!--
+    Нужно, чтобы папка Templates с .html файлами
+    копировалась в папку рядом с exe при сборке/запуске.
+  -->
+  <ItemGroup>
+    <None Include="Templates\**\*.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

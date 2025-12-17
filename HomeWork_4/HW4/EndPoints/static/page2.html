@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Страница 2</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>Page 2 (GET и POST /page2)</h1>
+    <p>Заполните форму и отправьте — ответ появится ниже.</p>
+
+    <form id="form">
+        <label>Ваше имя:</label><br>
+        <input type="text" name="name" placeholder="Например, Иван" required><br>
+
+        <label>Сообщение:</label><br>
+        <textarea name="message" rows="5" placeholder="Что хотите сказать?"></textarea><br>
+
+        <button type="submit">Отправить</button>
+    </form>
+
+    <h2>Ответ от сервера:</h2>
+    <pre id="result">Отправьте форму, чтобы увидеть результат...</pre>
+
+
+    <script>
+        document.getElementById('form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const params = new URLSearchParams(formData);
+
+            const res = await fetch('/page2', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: params
+            });
+
+            const data = await res.json();
+            document.getElementById('result').textContent = JSON.stringify(data, null, 2);
+        });
+    </script>
+</body>
+</html>

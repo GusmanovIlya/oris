@@ -1,0 +1,8 @@
+{
+  "SmtpHost": "smtp.gmail.com",
+  "SmtpPort": 587,
+  "SmtpUser": "gusmanovsemestrovkaorisgusmano@gmail.com",
+  "SmtpPass": "jepsqduzomnmdynd",
+  "FromAddr": "gusmanovsemestrovkaorisgusmano@gmail.com",
+  "FromName": "Мой личный сайт"
+}

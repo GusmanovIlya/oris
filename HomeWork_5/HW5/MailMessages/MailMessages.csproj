@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <!-- Консольное приложение -->
+    <OutputType>Exe</OutputType>
+    <!-- .NET 10.0 — самая актуальная версия на декабрь 2025 -->
+    <TargetFramework>net10.0</TargetFramework>
+    <!-- Автоматические using (System, System.Collections и т.д.) -->
+    <ImplicitUsings>enable</ImplicitUsings>
+    <!-- Проверка на null для большей безопасности -->
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Копируем конфиг почты и все файлы из static в папку с exe -->
+    <None Update="email.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="static\**\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>
