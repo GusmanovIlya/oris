@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Новый профиль",
+    "Projects": [
+      {
+        "Path": "TCPServer\\TCPServer.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "GameAndDot\\GameAndDot.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
